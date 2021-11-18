@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(89, 187, 252);
+    position: relative;
+}
+.jake {
+    width: 90%;
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    margin: 0 5%;
+    z-index: 0;
+}
+.jake-torso {
+    width: 100%;
+    height: 100%;
+    background-color: #f5b424;
+    border: 3px solid #000;
+    border-radius: 50px;
+    z-index: 0;
+
+}
+.jake-header {
+    width: 120px;
+    height: 70px;
+    background-color: #f5b424;
+    border: 3px solid #000;
+    border-radius: 100px;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+
+}
+.jake-header::before {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f5b424;
+    border: 3px solid #000;
+    position: absolute;
+    top: 60px;
+    left: -3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+}
+.jake-header::after {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f5b424;
+    border: 3px solid #000;
+    position: absolute;
+    top: 60px;
+    left: 97px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+}
+.jake-eye {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+}
+.eye-right {
+    top: 25px;
+    right: 20px;
+}
+.eye-left {
+    top: 25px;
+    left: 20px;
+}
+.jake-eye::before {
+    content: ' ';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+}
+.jake-nose {
+    width: 40px;
+    height: 25px;
+    background-color: #f5b424;
+    border-radius: 100px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 3px solid #000;
+    border-bottom: 0;
+    position: absolute;
+    top: 40px;
+    left: 37px;
+}
+.jake-nose::before {
+    content: ' ';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: #f5b424;
+    position: absolute;
+    border: 3px solid #000;
+    top: 20px;
+    left: -3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+}
+.jake-nose::after {
+    content: ' ';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: #f5b424;
+    position: absolute;
+    border: 3px solid #000;
+    top: 20px;
+    right: -3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    z-index: 0;
+}
+.jake-snout {
+    width: 18px;
+    height: 13px;
+    border-radius: 20px;
+    background-color: #000;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+.jake-tail {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -23px;
+    right: 5px;
+    box-shadow: 10px 10px 0 0 #f5b424;
+}
+.jake-tailback {
+    width: 76px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: -33px;
+    right: 8px;
+    box-shadow: 16px 13px 0 0 #000;
+    z-index: -1;
+}
+.jake-leg {
+    width: 20px;
+    height: 70px;
+    position: absolute;
+    background-color: #f5b424;
+    border: 3px solid #000;
+    border-top: 0;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+
+}
+.jake-leg::after{
+    content: ' ';
+    display: block;
+    width: 33px;
+    height: 20px;
+    border: 3px solid #000;
+    background-color: #f5b424;
+    position: absolute;
+    left: -18px;
+    border-radius: 20px;
+    top: 47px;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    clip: rect(0px, 25px, 26px, 0px);
+}
+.leg-3{
+    right: 70px;
+    bottom: -62px;
+
+}
+.leg-4 {
+    right: 40px;
+    bottom: -62px;
+    z-index: 2;
+}
+.leg-1{
+    bottom: -45px;
+    left: 50px;
+}
+.leg-2 {
+    bottom: -62px;
+    left: 80px;
+    z-index: 2;
+}
+@media screen and (max-width:1200px) {
+    .box {
+        background-color: turquoise;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .box {
+        background-color: wheat;
+    }
+}
+@media  screen and (max-width:767px) {
+    .box {
+        background-color: tomato;
+    }
+}
